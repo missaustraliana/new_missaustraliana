@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "kis";
+    src: url(https://cors.technobytecritter.workers.dev/?https://cdn.missaustraliana.net/1989TaylorsVersion.ttf);
+  }
+  body {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-variation-settings: "wght" 600, "wdth" 130;
+  }
+  .main {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-align: center;
+    margin: 0;
+    padding: 3px;
+  
+  }
+  a {
+    color: #ffffff;
+  }
+  
+  .t2 {
+    font-variation-settings: "wght" 400, "wdth" 130;
+  }
+  .t3 {
+    font-variation-settings: "wght" 200, "wdth" 130;
+  
+  }
+  
+  @keyframes barprogress {
+  0% {
+      background-position: 0% 0;
+  }
+  100% {
+      background-position: 125% 0;
+  }
+  }
+  .kis {
+    font-family: 'kis';
+  }
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    20% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes opacity {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .slide-in-out {
+    position: relative;
+    animation: slideUp 3.5s ease-in-out forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide-in-out::before,
+  .slide-in-out::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px; /* Adjust as needed */
+  }
+  
+  .slide-in-out::before {
+    top: -10px;
+  }
+  
+  .slide-in-out::after {
+    bottom: -10px;
+  }
+  #fill {
+    background-color: black;
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  position: absolute;
+  animation: opacity 15s ease-in-out forwards;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .indeterminate-progress-bar {
+    /* Color */
+   
+  
+    /* Rounded border */
+    border-radius: 9999px;
+    /* Size */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 0.5rem;
+    width: 50%;
+  
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .indeterminate-progress-bar__progress {
+    /* Color */
+    background-color: white;
+  
+    /* Rounded border */
+    border-radius: 9999px;
+  
+    /* Absolute position */
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 30%;
+  
+    /* Move the bar infinitely */
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: indeterminate-progress-bar;
+  }
+  
+  @keyframes indeterminate-progress-bar {
+    from {
+        left: -30%;
+    }
+    to {
+        left: 100%;
+    }
+  }
+  .svgpreload {
+  
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  .preload_box {
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .greet {
+  color: white;
+  position: sticky;
+  
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .positions {
+    z-index: 2;
+  }
