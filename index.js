@@ -6,6 +6,7 @@ const app = express();
 
 const server = http.createServer(app);
 app.use(express.static("public"));
+/*
 const serverUrl = 'https://tracker.archiveteam.org:8081/urls-log';
 process.stdout.write('START\r');
 const socket = io.connect(serverUrl, {
@@ -17,10 +18,6 @@ const socket = io.connect(serverUrl, {
   'connect timeout': 5000
 });
 
-const PORT = process.env.PORT || 3131;
-server.listen(PORT, () => {
-	console.log(`Server is running on port ${PORT}`);
-});
 
 socket.on('connect', function() {
   process.stdout.write('CONNECTED\r\n');
@@ -61,4 +58,9 @@ process.on('SIGINT', function() {
   console.log('Shutting down...');
   socket.disconnect();
   process.exit(0);
+});
+*/
+const PORT = process.env.PORT || 1313;
+server.listen(PORT, () => {
+	console.log(`Server is running on port ${PORT}`);
 });
